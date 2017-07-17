@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Gitlab issue reporter",
+  "description": "Chrome extension to report issue on your own gitlab prject",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "dist/popup.html"
+  },
+  "options_page": "dist/options.html",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
