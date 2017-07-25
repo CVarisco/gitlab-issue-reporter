@@ -2,9 +2,7 @@ import Storage from "./storage";
 
 const GIR = {
   init() {
-    $(window).on("load", () => {
-      $("select.dropdown").dropdown();
-    });
+    $(window).on("load", () => {});
   }
 };
 

@@ -3,35 +3,41 @@
 
 <head>
     <title>Gitlab issue reporter</title>
-    <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="vendor/jquery-3.2.1.min.js"></script>
-    <script src="vendor/semantic/semantic.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="vendor/cash.min.js"></script>
 </head>
 
 <body>
-    <div class="ui text container">
-        <div class="ui form">
-            <h4 class="ui dividing header">
-                Options:
-            </h4>
-            <div class="field">
-                <label>Api key*</label>
-                <textarea id="apikey" rows="1"></textarea>
+    <div class="container">
+        <div class="row">
+            <div class="title col-md-6 col-md-offset-3">
+                <img class="text-center" src="img/icons/svg/mail.svg" alt="Mail">
+                <h3 class="text-center">gitlab issue reporter</h3>
             </div>
-            <div class="field">
-                <label>Gitlab url*</label>
-                <textarea id="gitlabUrl" rows="1"></textarea>
-            </div>
-
-            <div class="field">
-                <label>Project name*</label>
-                <textarea id="projectName" rows="1"></textarea>
-            </div>
-
-            <div class="field">
-                <button id="submit" class="ui primary button">Save settings</button>
-            </div>
+            <form class="col-md-6 col-md-offset-3">
+                <div class="form-group">
+                    <label for="gitlabUrl">Gitlab URL:</label>
+                    <input type="email" class="form-control" id="gitlabUrl" placeholder="url">
+                </div>
+                <div class="form-group">
+                    <label for="apiKey">Api key:</label>
+                    <input type="password" class="form-control" id="apiKey" placeholder="key">
+                </div>
+                <div class="form-group">
+                    <label for="apiKey">Project:</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Connect</button>
+            </form>
         </div>
     </div>
     <script src="options.js"></script>

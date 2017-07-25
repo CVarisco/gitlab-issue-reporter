@@ -5,7 +5,7 @@ const GIR = {
     $(window).on("load", () => {});
   }
 };
-console.log(chrome);
+
 $("#submit").on("click", () => {
   chrome.storage.sync.set(
     {
