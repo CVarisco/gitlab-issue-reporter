@@ -20,11 +20,14 @@ body {
     margin: 30px auto; 
 }
 
+.title {
+    text-align: center
+}
 
 .title img {
-    float:left;
-    width: 35px;
-    margin: 37px 20px 0px 0;
+    float: left;
+    width: 45px;
+    margin: 0px 15px 0px 0;
 }
 
 .title img,
