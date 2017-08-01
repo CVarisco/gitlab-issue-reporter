@@ -1,0 +1,14 @@
+.container {
+    width: 600px;
+    padding: 30px;
+}
+
+textarea {
+    resize: none;
+    min-height: 125px;
+}
+
+#create-button,
+#clear-button {
+    margin: 20px 0 0 0;
+}

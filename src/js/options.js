@@ -7,7 +7,6 @@ function clearStorage(callback) {
   saveOnStore(
     {
       [KEYS.API_KEY]: null,
-      [KEYS.PROJECT_NAME]: null,
       [KEYS.GITLAB_URL]: null
     },
     callback
@@ -21,12 +20,10 @@ function initForm() {
   getFromStore(
     {
       [KEYS.API_KEY]: null,
-      [KEYS.PROJECT_NAME]: null,
       [KEYS.GITLAB_URL]: null
     },
-    ({ API_KEY, PROJECT_NAME, GITLAB_URL }) => {
+    ({ API_KEY, GITLAB_URL }) => {
       $("#apiKey").val(API_KEY);
-      $("#projectName").val(PROJECT_NAME);
       $("#gitlabURL").val(GITLAB_URL);
     }
   );
@@ -39,12 +36,10 @@ function attacchSaveHandler() {
   $("#options-form").on("submit", e => {
     e.preventDefault();
     const apiKey = $("#apiKey").val();
-    const projectName = $("#projectName").val();
     const gitlabURL = $("#gitlabURL").val();
 
     saveOnStore({
       [KEYS.API_KEY]: apiKey,
-      [KEYS.PROJECT_NAME]: projectName,
       [KEYS.GITLAB_URL]: gitlabURL
     });
   });
@@ -58,7 +53,6 @@ function attachClearHandler() {
     e.preventDefault();
     clearStorage(() => {
       $("#apiKey").val(null);
-      $("#projectName").val(null);
       $("#gitlabURL").val(null);
     });
   });

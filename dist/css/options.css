@@ -1,0 +1,14 @@
+.title {
+    text-align: center
+}
+
+.title img {
+    float: left;
+    width: 45px;
+    margin: 0px 15px 0px 0;
+}
+
+.title img,
+.title h3 {
+    display: inline-block
+}

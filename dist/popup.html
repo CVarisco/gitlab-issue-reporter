@@ -3,15 +3,57 @@
 
 <head>
     <title>Gitlab issue reporter</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
     <script src="vendor/cash.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
-
+    <div class="container">
+        <div class="row">
+            <div class="title col-md-6">
+                <h4>Create issue:</h4>
+            </div>
+            <form class="col-md-6" id="options-form">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea type="text" class="form-control" id="description" placeholder="Write markdown here"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label for="description">Project:</label>
+                        <select class="form-control" id="project">
+                            <option>Project 1</option>
+                            <option>Project 2</option>
+                            <option>Project 3</option>
+                            <option>Project 4</option>
+                            <option>Project 5</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-6">
+                        <label for="description">Labels:</label>
+                        <select class="form-control" id="labels">
+                            <option>Project 1</option>
+                            <option>Project 2</option>
+                            <option>Project 3</option>
+                            <option>Project 4</option>
+                            <option>Project 5</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary pull-left btn-danger" id="clear-button" type="submit" value="Send">Clear form</button>
+                <button class="btn btn-primary pull-right" id="create-button" type="submit" value="Send">Create</button>
+            </form>
+        </div>
     </div>
-    <script src="options.js"></script>
+    <script src="bundle.js"></script>
 </body>
 
 </html>
