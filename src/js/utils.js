@@ -1,5 +1,5 @@
 function isEmptyString(value) {
-  return value === "";
+  return value === ''
 }
 
-export { isEmptyString };
+export { isEmptyString }

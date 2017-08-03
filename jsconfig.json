@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "dom",
+            "es6",
+            "dom.iterable",
+            "scripthost",
+            "es7",
+            "es2017.object"
+        ],
+        "allowSyntheticDefaultImports": true
+    }
+}
