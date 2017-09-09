@@ -63,6 +63,9 @@ class GitlabApi {
   getLabels(projectId) {
     return this.get(`/projects/${projectId}/labels`)
   }
+  uploadProjectFile(projectId, file) {
+    return this.post(`/projects/${projectId}/uploads`, file)
+  }
   postIssue(projectId, issue) {
     return this.post(`/projects/${projectId}/issues`, issue)
   }
