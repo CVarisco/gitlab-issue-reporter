@@ -1,5 +1,4 @@
 import { KEYS, saveOnStore, getFromStore } from './storage'
-
 /**
  * Clear the storage and exec a callback
  */
@@ -12,7 +11,7 @@ function clearStorage(callback) {
     callback
   )
 }
-
+// qVCJByMzDhUr1yyxZeCT
 /**
  * Get options from storage and fill the form
  */

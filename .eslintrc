@@ -1,24 +1,26 @@
 {
-    "parser": "babel-eslint",
-    "extends": ["airbnb-base"],
-    "env": {
-        "browser": true
-    },
-    "globals": {
-        "jest": false,
-        "expect": false,
-        "describe": false,
-        "xdescribe": false,
-        "test": false,
-        "it": false,
-        "xit": false,
-        "beforeAll": false,
-        "beforeEach": false,
-        "afterAll": false,
-        "afterEach": false
-    },
-    "rules": {
-        "semi": [2, "never"],
-        "comma-dangle": [2, "always-multiline"]
-    }
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "jest": false,
+    "$": false,
+    "expect": false,
+    "describe": false,
+    "xdescribe": false,
+    "test": false,
+    "it": false,
+    "xit": false,
+    "beforeAll": false,
+    "beforeEach": false,
+    "afterAll": false,
+    "afterEach": false
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "comma-dangle": [2, "always-multiline"],
+    "newline-per-chained-call": ["error"]
+  }
 }
