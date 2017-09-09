@@ -5,7 +5,9 @@
     "repository": "",
     "author": "Christian Varisco <vari.chri1993@gmail.com>",
     "license": "MIT",
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "lint": "eslint src test",
         "build": "webpack --config webpack.config.js",

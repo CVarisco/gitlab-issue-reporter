@@ -1,4 +1,4 @@
-import GitlabApi from '../../src/js/GitlabApi'
+import GitlabAPI from '../../src/js/GitlabAPI'
 
 const TEST_PARAMS = {
   TOKEN: '1234',
@@ -10,7 +10,7 @@ const TEST_PARAMS = {
 
 describe('GitlabApi', () => {
   it('setup ', () => {
-    const Api = new GitlabApi(TEST_PARAMS.TOKEN, TEST_PARAMS.BASE_URL)
+    const Api = new GitlabAPI(TEST_PARAMS.TOKEN, TEST_PARAMS.BASE_URL)
     expect(Api.token).toEqual(TEST_PARAMS.TOKEN)
     expect(Api.baseURL).toEqual(TEST_PARAMS.BASE_URL)
     expect(Api.prepareUrl(TEST_PARAMS.PATH)).toEqual(TEST_PARAMS.FULL_PATH)
