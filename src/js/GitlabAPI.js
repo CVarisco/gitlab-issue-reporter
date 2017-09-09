@@ -44,6 +44,16 @@ class GitlabApi {
       },
     })
   }
+  uploadFile(url, file) {
+    return fetch(this.prepareUrl(url), {
+      method: 'POST',
+      body: file,
+      headers: {
+        ...this.tokenHeader(),
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+  }
   getVersion() {
     return this.get('/version')
   }
