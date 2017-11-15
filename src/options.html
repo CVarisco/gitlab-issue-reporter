@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Gitlab issue reporter</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flat-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/options.css">
+  <script src="vendor/cash.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="title col-md-6 col-md-offset-3">
+        <h3 class="text-center">
+          <img class="text-center" src="img/icons/svg/mail.svg" alt="Mail"> gitlab issue reporter
+        </h3>
+      </div>
+      <form class="col-md-6 col-md-offset-3" id="options-form">
+        <div class="form-group">
+          <label for="gitlabURL">Gitlab URL:</label>
+          <input type="text" class="form-control" id="gitlabURL" placeholder="https://gitlab.com/" required>
+        </div>
+        <div class="form-group">
+          <label for="apiKey">Api key:</label>
+          <input type="password" class="form-control" id="apiKey" placeholder="key" required>
+        </div>
+        <button class="btn btn-primary" id="save-button" type="submit" value="Send">Save</button>
+        <button class="btn btn-primary btn-danger" id="delete-button">Clear</button>
+      </form>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+
+</html>

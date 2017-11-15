@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   devtool: "inline-sourcemap",
@@ -11,5 +12,16 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js"
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: 'src/css', to: 'css' },
+      { from: 'src/fonts', to: 'fonts' },
+      { from: 'src/img', to: 'img' },
+      { from: 'src/vendor', to: 'vendor' },
+      { from: 'src/manifest.json' },
+      { from: 'src/options.html' },
+      { from: 'src/popup.html' },
+    ])
+  ]
 };
